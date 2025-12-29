@@ -1,0 +1,292 @@
+::-webkit-scrollbar{
+  width:0;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  overflow-x: hidden;
+  margin: 0px;
+  padding: 0px;
+  width:100vw;
+  height: 100vh;
+  justify-content: center;
+  background-size: cover;
+  animation: scroll 0.1s 4s linear;
+  animation-fill-mode: both;
+}
+@keyframes scroll{
+  from{
+    overflow-y: hidden;
+  }
+  to{
+    overflow-y: auto;
+  }
+}
+@font-face{
+  font-family: 'Audiowide';
+  src: url(Nirequa.woff2) format("woff2");
+}
+.first{
+  display: block;
+  background-image: url(Background.jpg);
+  background-size: cover;
+  z-index: 0;
+  height: 100vh;width:100vw;
+  overflow: hidden;
+  margin: 0px;
+}
+
+.maintext{
+  color: white;
+  font-family: "Audiowide", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  position: absolute;
+  bottom: 45%;right:23%;
+  height: 100px;width:900px;
+  font-size:clamp(8rem,10vw,8rem);
+  font-style: bold;
+  z-index: 1;
+}
+.mainrobot{
+  height: 650px;width:500px;
+  background-image: url(Robot.png);
+  background-size: 500px 650px ;
+  background-position: center;
+  position: absolute;
+  bottom: 0%;
+  right: 35%;
+  z-index: 2;
+  animation: zoom 2s 0s ease-in-out;
+  animation-fill-mode: both;
+}
+@keyframes zoom{
+  from{
+    opacity: 0;
+    height: 900px;width:750px;
+    background-size: 750px 900px;
+    bottom:-900px;
+    right:25%;
+  }
+  to{
+    opacity: 1;
+    height: 650px;width:500px;
+    background-size: 500px 650px;
+    bottom:0%;
+  }
+}
+.radar{
+  height: 400px;width:300px;
+  border-radius: 15%;
+  background-image: url(P.jpg);
+  background-size: cover;
+  position: absolute;
+  right:30px;bottom:200px;
+  box-shadow: white 0px 0px 10px;
+  animation: radar 1s 3s ease-in-out;
+  animation-fill-mode: both;
+}
+@keyframes radar{
+  from{
+    opacity: 0;
+    right:-200px;
+  }
+  to{
+    opacity: 1;
+    right:30px;
+  }
+}
+.logo{
+  background-image: url(https://raw.githubusercontent.com/jokerda66-808/Gif/refs/heads/main/1765616886590.png);
+  background-size: cover;
+  height: 150px;width:150px;
+  position: absolute;
+  right: 45%;
+}
+ul{
+    width:150vw;
+    list-style:none;
+    display: flex;
+    justify-content: space-between;
+}
+header{
+    position:fixed;
+    width:95vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+  z-index: 10;
+  animation: head 1s 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+@keyframes head{
+  from{
+    opacity: 0;
+    top:-150px;
+  }
+  to{
+    opacity: 1;
+    top:0px;
+  }
+}
+button {
+  font-family: "Audiowide";
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+button:hover {
+  cursor: pointer;
+  background: rgb(170, 170, 170);
+  box-shadow: 0 0 30px 5px rgba(250, 250, 250, 0.815);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+button:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+button::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+button:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+
+
+
+.second{
+  position: relative;
+  height: 100vh;width:100vw;
+  background: url(https://i.postimg.cc/3Jb1Q0Ns/1765656411901.jpg);
+  background-size: cover;
+  margin: 0px;
+  padding: 0px;
+  z-index: 3;
+}
+.image3{
+  background-image: url(https://i.postimg.cc/Pxvy7dng/ebfcbafcfd31af1774096bcba277c097.jpg);
+  border-radius: 10%;
+  height: 350px;width:250px;
+  background-size: cover;
+  box-shadow: chartreuse 0px 0px 10px ;
+  position: absolute;
+  left:10%;bottom:29%;
+  z-index: 4;
+  transition: all 0.5s ease-in-out;
+  margin: 0;
+}
+.second div:hover{
+  transform: scale(1.05);
+}
+.image2{
+  background-image: url(https://i.postimg.cc/8znhgxHt/1aa963ed399aaebfb711d2ff1ab871d5.jpg);
+  border-radius: 10%;
+  height: 400px;width:300px;
+  background-size: cover;
+  box-shadow: chartreuse 0px 0px 10px;
+  position: absolute;
+  left:13%;bottom:27%;
+  z-index: 5;
+  transition: all 0.5s ease-in-out;
+  margin: 0;
+}
+.image1{
+  background-image: url(https://i.postimg.cc/L5Hq1VDh/139f7748673ccfb92e22dd38bae68f8d.jpg);
+  border-radius: 10%;
+  height: 450px;width:350px;
+  background-size: cover;
+  box-shadow: chartreuse 0px 0px 10px;
+  position: absolute;
+  left:16%;bottom:25%;
+  z-index: 6;
+  transition: all 0.5s ease-in-out;
+  margin: 0;
+}
+.hdefini{
+  text-shadow: chartreuse 0px 0px 30px;
+  -webkit-text-stroke:01px chartreuse;
+  margin: 0;
+  color: white;
+  font-family: 'Audiowide';
+  position: absolute;
+  font-size: 70px;
+  top:25%;
+  right:15%;
+}
+.pdefini{
+  margin: 0;
+  font-family: 'Audiowide';
+  text-shadow: black 0px 0px 10px;
+  position:absolute;
+  bottom: 25%;right:15%;left:57%;
+  color: white;
+  font-size: 20px;
+}
+.second *{
+  animation: vue both;
+  animation-timeline: view(50% 10%)
+}
+@keyframes vue{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
